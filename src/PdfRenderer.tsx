@@ -5,7 +5,7 @@ import 'pdfjs-dist/web/pdf_viewer.css';
 import './PdfRenderer.scss';
 import { I18nDataRenderer, defaultI18n, I18nContext } from './I18nContext';
 import { getPDFFileNameFromURL } from './lib/filenameHelper';
-import ipp from 'ipp';
+const ipp = require('ipp');
 
 
 const roundToNearest = (numToRound: number, numToRoundTo: number) =>
